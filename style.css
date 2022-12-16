@@ -1,0 +1,68 @@
+/* element we want to target {
+    styles that we want 
+} */
+
+/* key value pairs = what are we changing
+value = what is the value of the change */
+body {
+    background-color: black;
+}
+
+h1{
+    color:white;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Yellowtail', cursive;
+    text-shadow: 0 0 7px #fff, 0 0 12px #fff, 0 0 40px rgb(17, 255, 17), 0 0 80px  rgb(17, 255, 17);
+}
+
+.box{
+    width:250px;
+    height:250px;
+    background-color:rgb(87, 82, 82);
+    margin:20px;
+    border-radius: 10px;
+    border: solid 2px #aaa;
+    box-shadow: 0 0 10px #fff;
+    transition: background-color 1.5s;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(26, 24, 24);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.box:nth-child(6n):hover{
+            background-color: green;
+            transition: background-color 0s;
+            box-shadow: 0 0 20px #fff;
+}
+.box:nth-child(6n + 1):hover{
+    background-color: pink;
+    transition: background-color 0s;
+    box-shadow: 0 0 20px #fff;
+}
+.box:nth-child(6n + 2):hover{
+    background-color: blue;
+    transition: background-color 0s;
+    box-shadow: 0 0 20px #fff;
+}
+.box:nth-child(6n + 3):hover{
+    background-color: red;
+    transition: background-color 0s;
+    box-shadow: 0 0 20px #fff;
+}
+.box:nth-child(6n + 4):hover{
+    background-color: yellow;
+    transition: background-color 1.5s;
+    box-shadow: 0 0 20px #fff;
+}
+.box:nth-child(6n + 5):hover{
+    background-color: violet;
+    transition: background-color 1.5s;
+    box-shadow: 0 0 20px #fff;
+}
